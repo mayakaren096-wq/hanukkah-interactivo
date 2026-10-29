@@ -1,0 +1,62 @@
+<!-- Realizado por Fhany Mendez y Karen Maya - 305 - Frameworks -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanukkah Interactivo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🕎 Hanukkah Interactivo 🕎</h1>
+            <p>La Fiesta de la Dedicación y de las Luces</p>
+        </header>
+
+        <div class="ofrenda">
+            <button id="anterior" class="flecha" aria-label="Foto anterior">
+                &#10094;
+            </button>
+            <div class="marco">
+                <img id="imagenOfrenda" src="img/PIN_1.jpg" alt="Fotografía de Hanukkah">
+                <div class="indicadores" id="puntos"></div>
+            </div>
+            <button id="siguiente" class="flecha" aria-label="Foto siguiente">
+                &#10095;
+            </button>
+        </div>
+
+        <div class="descripcion" id="descripcion">
+            Celebrando el milagro del aceite en el Templo de Jerusalén.
+        </div>
+
+        <!-- Definición de Hanukkah para tu profesora y visitantes -->
+        <div class="definicion-hanukkah">
+            <h2>¿Qué es Hanukkah?</h2>
+            <p>
+                Hanukkah (o Jánuca) es la <strong>Fiesta de la Dedicación</strong> o de las Luces. 
+                Es una festividad registrada históricamente y mencionada en la Biblia (Juan 10:22). 
+                Conmemora la purificación y rededicación del Segundo Templo de Jerusalén por parte de los Macabeos en el siglo II a.C., 
+                tras liberarlo del dominio helénico. Durante este evento, una pequeña vasija de aceite puro para el candelabro (Menorá) 
+                que solo alcanzaba para un día, milagrosamente permaneció encendida durante <strong>8 días consecutivos</strong>.
+            </p>
+        </div>
+
+        <div class="controles">
+            <button id="btnMusica" class="btn-musica">
+                <span id="iconoMusica">▶</span>
+                <span id="textoMusica">Reproducir música</span>
+            </button>
+        </div>
+
+        <!-- Archivo de audio configurado con tu estructura exacta -->
+        <audio id="musica" loop>
+            <source src="audio/kadosh-paul-wilbur.mp3" type="audio/mpeg">
+            Tu navegador no admite audio HTML5.
+        </audio>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
